@@ -1,4 +1,6 @@
-namespace TanksLibrary.Core.TankComponents
+using TanksLibrary.Core.TankComponents;
+
+namespace TanksLibrary.Core
 {
     public interface IControllerFactory
     {

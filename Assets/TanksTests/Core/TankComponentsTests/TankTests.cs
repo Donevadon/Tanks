@@ -6,6 +6,7 @@ using TanksLibrary.Core;
 using TanksLibrary.Core.TankComponents;
 using TanksLibrary.Core.TankComponents.TowerComponents;
 using TanksLibrary.Core.TankComponents.TransmissionComponents;
+using TanksLibrary.Core.TankComponents.TransmissionComponents.TrackComponents;
 using TanksLibrary.Core.TankComponents.TransmissionComponents.TrackComponents.Tracks;
 using TanksTests.Core.TankComponentsTests.TowerComponentsTests;
 using TanksTests.Core.TankComponentsTests.TransmissionsComponentsTests;
@@ -25,7 +26,7 @@ namespace TanksTests.Core.TankComponentsTests
         {
             _tank = new GameObject("Tank",
                 typeof(RightTrack),
-                typeof(LeftTrack),typeof(Transmission),
+                typeof(LeftTrack),typeof(CertainTransmission),
                 typeof(Tower))
                 .AddComponent<TestTank>();
             _controller = new TestTankController(_tank);

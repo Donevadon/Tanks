@@ -1,15 +1,13 @@
-using System;
 using DG.Tweening;
-using TanksLibrary.Core.TankComponents.TransmissionComponents.TrackComponents;
 using UnityEngine;
 
 namespace TanksLibrary.Core.TankComponents.TransmissionComponents
 {
-    public class Transmission : MonoBehaviour, IControllerBinder<ITransmissionController>
+    public abstract class Transmission : MonoBehaviour, IControllerBinder<ITransmissionController>
     {
-        private Track LeftTrack { get; set; }
+        private IRunningGear LeftTrack { get; set; }
 
-        private Track RightTrack { get; set; }
+        private IRunningGear RightTrack { get; set; }
 
         private Transform _bodyTransform;
         private Transform BodyTransform => _bodyTransform != null 
@@ -52,9 +50,6 @@ namespace TanksLibrary.Core.TankComponents.TransmissionComponents
             RightTrack = factory.GetRightTrack();
         }
 
-        protected virtual ITrackFactory CreateTrackFactory()
-        {
-            return new MonoBehaviorTrackFactory(this);
-        }
+        protected abstract ITrackFactory CreateTrackFactory();
     }
 }

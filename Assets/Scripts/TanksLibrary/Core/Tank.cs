@@ -1,13 +1,9 @@
 ﻿using System;
-using TanksLibrary.Core.TankComponents.TankControllers.TowerControllers;
-using TanksLibrary.Core.TankComponents.TankControllers.TransmissionControllers;
-using TanksLibrary.Core.TankComponents.TowerComponents;
-using TanksLibrary.Core.TankComponents.TransmissionComponents;
 using UnityEngine;
 
-namespace TanksLibrary.Core.TankComponents
+namespace TanksLibrary.Core
 {
-    public class Tank : MonoBehaviour , IControllerBinder<ITowerEquipmentController>,ITargetElement
+    public abstract class Tank : MonoBehaviour , IControllerBinder<ITowerEquipmentController>,ITargetElement
     {
         private event EventHandler ONMouseClick;
         private ITowerController _towerController;
@@ -25,12 +21,9 @@ namespace TanksLibrary.Core.TankComponents
             _transmissionController = factory.GetTransmissionController();
         }
 
-        protected virtual IControllerFactory CreateControllerFactory()
-        {
-            return new MonoBehaviorTankControllerFactory();
-        }
+        protected abstract IControllerFactory CreateControllerFactory();
 
-        
+
         void IControllerBinder<ITowerEquipmentController>.ControllerBind(ITowerEquipmentController controller)
         {
             controller.OnMoveTo += ControllerOnMoveTo; 
@@ -63,19 +56,6 @@ namespace TanksLibrary.Core.TankComponents
         void ITargetElement.DisableHighlighting()
         {
             Debug.Log("Подсветка выключена");
-        }
-    }
-
-    internal class MonoBehaviorTankControllerFactory : IControllerFactory
-    {
-        public ITowerController GetTowerController()
-        {
-            throw new NotImplementedException();
-        }
-
-        public ITransmissionController GetTransmissionController()
-        {
-            throw new NotImplementedException();
         }
     }
 }

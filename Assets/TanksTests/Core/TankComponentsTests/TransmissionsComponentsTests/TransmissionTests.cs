@@ -8,41 +8,57 @@ using TanksLibrary.Core.TankComponents.TransmissionComponents.TrackComponents;
 using TanksLibrary.Core.TankComponents.TransmissionComponents.TrackComponents.Tracks;
 using UnityEngine;
 using UnityEngine.TestTools;
+using Object = UnityEngine.Object;
 
 namespace TanksTests.Core.TankComponentsTests.TransmissionsComponentsTests
 {
     public class TransmissionTests
     {
+        private TestTransmission _transmission;
+        private TransmissionControllerTest _controller;
+        
+        [SetUp]
+        public void Setup()
+        {
+            _transmission = new GameObject("transmission",
+                    typeof(LeftTrack),
+                    typeof(RightTrack))
+                .AddComponent<TestTransmission>();
+                        
+            _controller = new TransmissionControllerTest(_transmission);
+
+        }
+        
+        
         private static Vector2[] _moveValues = {Vector2.one,-Vector2.one,Vector2.down, Vector2.up, Vector2.left, Vector2.right, new Vector2(1,-1), new Vector2(-1,1) }; 
         [UnityTest]
         public IEnumerator MoveTransmissionToPoint([ValueSource(nameof(_moveValues))]Vector2 vector2)
         {
-            var transmission = new GameObject("transmission",
-                    typeof(LeftTrack),
-                    typeof(RightTrack))
-                .AddComponent<TestTransmission>();
-            
-            var controller = new TransmissionControllerTest(transmission);
-
-
-            controller.MoveToInvoke(vector2);
+            _controller.MoveToInvoke(vector2);
             yield return new WaitForSeconds(5);
             
-            Assert.AreEqual((Vector2)transmission.transform.position,vector2);
+            Assert.AreEqual((Vector2)_transmission.transform.position,vector2);
             
             yield return null;
         }
+        
+        [TearDown]
+        public void TearDown()
+        {
+            Object.Destroy(_transmission.gameObject);
+        }
+
     }
 
     public class TransmissionControllerTest : ITransmissionController
     {
         public TransmissionControllerTest(IControllerBinder<ITransmissionController> equipment)
         {
-            Equipment = equipment;
-            Equipment.ControllerBind(this);
+            _equipment = equipment;
+            _equipment.ControllerBind(this);
         }
 
-        public IControllerBinder<ITransmissionController> Equipment { get; }
+        private readonly IControllerBinder<ITransmissionController> _equipment;
         public event EventHandler<Vector2> OnMoveTo;
 
         public void MoveToInvoke(Vector2 e)

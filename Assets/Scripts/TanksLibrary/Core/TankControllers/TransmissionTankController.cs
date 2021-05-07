@@ -1,18 +1,17 @@
 using System;
-using TanksLibrary.Core.TankComponents.TransmissionComponents;
 using UnityEngine;
 
-namespace TanksLibrary.Core.TankComponents.TankControllers.TransmissionControllers
+namespace TanksLibrary.Core.TankControllers
 {
     public class TransmissionTankController : ITransmissionController
     {
-        public IControllerBinder<ITransmissionController> Equipment { get; }
+        private readonly IControllerBinder<ITransmissionController> _equipment;
         public event EventHandler<Vector2> OnMoveTo;
 
         public TransmissionTankController(IControllerBinder<ITransmissionController> equipment)
         {
-            Equipment = equipment;
-            Equipment.ControllerBind(this);
+            _equipment = equipment;
+            _equipment.ControllerBind(this);
         }
 
         
