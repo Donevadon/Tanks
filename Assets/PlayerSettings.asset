@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced37760be1a45a18c79095a7ce25b00, type: 3}
+  m_Name: PlayerSettings
+  m_EditorClassIdentifier: 
+  units:
+  - {fileID: 164328183292596131, guid: c5dd53c3c823ccd528fed446b5c71031, type: 3}
+  positions:
+  - {x: -7.12, y: -3}

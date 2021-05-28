@@ -1,0 +1,106 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "LevelCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/LevelCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LevelCore.dll": {}
+        }
+      },
+      "TurretCrawlerUnit/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "LevelCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TurretCrawlerUnit.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TurretCrawlerUnit.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LevelCore/1.0.0": {
+      "type": "project",
+      "path": "../LevelCore/LevelCore.csproj",
+      "msbuildProject": "../LevelCore/LevelCore.csproj"
+    },
+    "TurretCrawlerUnit/1.0.0": {
+      "type": "project",
+      "path": "../TurretCrawlerUnit/TurretCrawlerUnit.csproj",
+      "msbuildProject": "../TurretCrawlerUnit/TurretCrawlerUnit.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "TurretCrawlerUnit >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/doneva/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/media/doneva/linux/Project/TanksFrameworks/Transmission/Transmission.csproj",
+      "projectName": "Transmission",
+      "projectPath": "/media/doneva/linux/Project/TanksFrameworks/Transmission/Transmission.csproj",
+      "packagesPath": "/home/doneva/.nuget/packages/",
+      "outputPath": "/media/doneva/linux/Project/TanksFrameworks/Transmission/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/doneva/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "/media/doneva/linux/Project/TanksFrameworks/TurretCrawlerUnit/TurretCrawlerUnit.csproj": {
+              "projectPath": "/media/doneva/linux/Project/TanksFrameworks/TurretCrawlerUnit/TurretCrawlerUnit.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

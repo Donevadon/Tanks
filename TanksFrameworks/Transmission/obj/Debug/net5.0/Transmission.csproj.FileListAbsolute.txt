@@ -1,0 +1,15 @@
+/media/doneva/linux/Project/TanksFrameworks/Transmission/bin/Debug/net5.0/Transmission.deps.json
+/media/doneva/linux/Project/TanksFrameworks/Transmission/bin/Debug/net5.0/Transmission.dll
+/media/doneva/linux/Project/TanksFrameworks/Transmission/bin/Debug/net5.0/ref/Transmission.dll
+/media/doneva/linux/Project/TanksFrameworks/Transmission/bin/Debug/net5.0/Transmission.pdb
+/media/doneva/linux/Project/TanksFrameworks/Transmission/bin/Debug/net5.0/LevelCore.dll
+/media/doneva/linux/Project/TanksFrameworks/Transmission/bin/Debug/net5.0/LevelCore.pdb
+/media/doneva/linux/Project/TanksFrameworks/Transmission/obj/Debug/net5.0/Transmission.csprojAssemblyReference.cache
+/media/doneva/linux/Project/TanksFrameworks/Transmission/obj/Debug/net5.0/Transmission.GeneratedMSBuildEditorConfig.editorconfig
+/media/doneva/linux/Project/TanksFrameworks/Transmission/obj/Debug/net5.0/Transmission.AssemblyInfoInputs.cache
+/media/doneva/linux/Project/TanksFrameworks/Transmission/obj/Debug/net5.0/Transmission.AssemblyInfo.cs
+/media/doneva/linux/Project/TanksFrameworks/Transmission/obj/Debug/net5.0/Transmission.csproj.CoreCompileInputs.cache
+/media/doneva/linux/Project/TanksFrameworks/Transmission/obj/Debug/net5.0/Transmission.csproj.CopyComplete
+/media/doneva/linux/Project/TanksFrameworks/Transmission/obj/Debug/net5.0/Transmission.dll
+/media/doneva/linux/Project/TanksFrameworks/Transmission/obj/Debug/net5.0/ref/Transmission.dll
+/media/doneva/linux/Project/TanksFrameworks/Transmission/obj/Debug/net5.0/Transmission.pdb
