@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OJqd3yIw2o+kKVq4wSlVFK1phpr6zokthSVUaBjMvQ5F9+d+VDT0PxSucvHm7wFn+ta7w+PGnw818k/rLaHa3Q==",
+  "dgSpecHash": "zIL7V5nzoUb3ZhVi8zzw8g9oN1f4/qE3hhs3FC9rEytoDgccgJzRTfiV2y7B1RcHROd2g6is+8svz2HxYlKc/g==",
   "success": true,
-  "projectFilePath": "/media/doneva/linux/Project/TanksFrameworks/Transmission/Transmission.csproj",
+  "projectFilePath": "/media/doneva/linux/Project/Tanks/TanksFrameworks/Transmission/Transmission.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

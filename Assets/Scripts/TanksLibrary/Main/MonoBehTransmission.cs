@@ -1,5 +1,6 @@
 using UnityEngine;
 using Transmission;
+using Vector2 = UnityEngine.Vector2;
 
 
 namespace TanksLibrary.Main

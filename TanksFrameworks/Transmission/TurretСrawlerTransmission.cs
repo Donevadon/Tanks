@@ -1,7 +1,4 @@
-﻿using LevelCore.MovePointManagement;
-using LevelCore.UnitSystem;
-
-namespace Transmission
+﻿namespace Transmission
 {
     public class TurretСrawlerTransmission
     {
@@ -32,7 +29,7 @@ namespace Transmission
 
         public void Ready()
         {
-            _controller.Ready();
+            _controller.Record();
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/media/doneva/linux/Project/TanksFrameworks/LevelCore/LevelCore.csproj": {}
+    "/media/doneva/linux/Project/Tanks/TanksFrameworks/LevelCore/LevelCore.csproj": {}
   },
   "projects": {
-    "/media/doneva/linux/Project/TanksFrameworks/LevelCore/LevelCore.csproj": {
+    "/media/doneva/linux/Project/Tanks/TanksFrameworks/LevelCore/LevelCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/doneva/linux/Project/TanksFrameworks/LevelCore/LevelCore.csproj",
+        "projectUniqueName": "/media/doneva/linux/Project/Tanks/TanksFrameworks/LevelCore/LevelCore.csproj",
         "projectName": "LevelCore",
-        "projectPath": "/media/doneva/linux/Project/TanksFrameworks/LevelCore/LevelCore.csproj",
+        "projectPath": "/media/doneva/linux/Project/Tanks/TanksFrameworks/LevelCore/LevelCore.csproj",
         "packagesPath": "/home/doneva/.nuget/packages/",
-        "outputPath": "/media/doneva/linux/Project/TanksFrameworks/LevelCore/obj/",
+        "outputPath": "/media/doneva/linux/Project/Tanks/TanksFrameworks/LevelCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/doneva/.nuget/NuGet/NuGet.Config"

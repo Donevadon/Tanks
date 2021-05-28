@@ -1,5 +1,6 @@
 using LevelCore.MovePointManagement;
 using Transmission;
+using Vector2 = Transmission.Vector2;
 
 namespace TanksLibrary.Main
 {
@@ -26,6 +27,11 @@ namespace TanksLibrary.Main
         public void RotateTo(Vector2 rotatePoint)
         {
             _controller.RotateTo(new UnityEngine.Vector2(rotatePoint.X,rotatePoint.Y));
+        }
+
+        public void Record()
+        {
+            throw new System.NotImplementedException();
         }
 
         public void Ready()

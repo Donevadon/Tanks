@@ -7,40 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "Transmission/1.0.0": {
-        "dependencies": {
-          "TurretCrawlerUnit": "1.0.0"
-        },
         "runtime": {
           "Transmission.dll": {}
-        }
-      },
-      "LevelCore/1.0.0": {
-        "runtime": {
-          "LevelCore.dll": {}
-        }
-      },
-      "TurretCrawlerUnit/1.0.0": {
-        "dependencies": {
-          "LevelCore": "1.0.0"
-        },
-        "runtime": {
-          "TurretCrawlerUnit.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Transmission/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "LevelCore/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "TurretCrawlerUnit/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

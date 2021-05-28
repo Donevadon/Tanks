@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MxJKbtElVUA+9FkMT/1gqsJacE3gDMwVoVLCgC9FGOtzlCuNn8KhQh4tdU6SKKupMMlFAp8NQbLL7CiObRYVhA==",
+  "dgSpecHash": "duCGGI9sb3erJqT/Tm6iu4W98F8DDoe73jVNu0aQhrrInXzul0XAxyB6RX0hcb+GH0waFEoNZZNYd1uG22wmkg==",
   "success": true,
-  "projectFilePath": "/media/doneva/linux/Project/TanksFrameworks/LevelCore/LevelCore.csproj",
+  "projectFilePath": "/media/doneva/linux/Project/Tanks/TanksFrameworks/LevelCore/LevelCore.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

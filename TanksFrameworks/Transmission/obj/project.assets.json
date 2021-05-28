@@ -1,48 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "LevelCore/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/LevelCore.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/LevelCore.dll": {}
-        }
-      },
-      "TurretCrawlerUnit/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "LevelCore": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/TurretCrawlerUnit.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TurretCrawlerUnit.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "LevelCore/1.0.0": {
-      "type": "project",
-      "path": "../LevelCore/LevelCore.csproj",
-      "msbuildProject": "../LevelCore/LevelCore.csproj"
-    },
-    "TurretCrawlerUnit/1.0.0": {
-      "type": "project",
-      "path": "../TurretCrawlerUnit/TurretCrawlerUnit.csproj",
-      "msbuildProject": "../TurretCrawlerUnit/TurretCrawlerUnit.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "TurretCrawlerUnit >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "/home/doneva/.nuget/packages/": {}
@@ -50,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/media/doneva/linux/Project/TanksFrameworks/Transmission/Transmission.csproj",
+      "projectUniqueName": "/media/doneva/linux/Project/Tanks/TanksFrameworks/Transmission/Transmission.csproj",
       "projectName": "Transmission",
-      "projectPath": "/media/doneva/linux/Project/TanksFrameworks/Transmission/Transmission.csproj",
+      "projectPath": "/media/doneva/linux/Project/Tanks/TanksFrameworks/Transmission/Transmission.csproj",
       "packagesPath": "/home/doneva/.nuget/packages/",
-      "outputPath": "/media/doneva/linux/Project/TanksFrameworks/Transmission/obj/",
+      "outputPath": "/media/doneva/linux/Project/Tanks/TanksFrameworks/Transmission/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/doneva/.nuget/NuGet/NuGet.Config"
@@ -68,11 +31,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "/media/doneva/linux/Project/TanksFrameworks/TurretCrawlerUnit/TurretCrawlerUnit.csproj": {
-              "projectPath": "/media/doneva/linux/Project/TanksFrameworks/TurretCrawlerUnit/TurretCrawlerUnit.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

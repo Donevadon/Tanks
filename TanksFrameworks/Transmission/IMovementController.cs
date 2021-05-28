@@ -1,6 +1,3 @@
-using LevelCore.MovePointManagement;
-using LevelCore.UnitSystem;
-
 namespace Transmission
 {
     public interface IMovementController
@@ -8,6 +5,6 @@ namespace Transmission
         void Play(int index);
         void MoveTo(Vector2 movePoint);
         void RotateTo(Vector2 rotatePoint);
-        void Ready();
+        void Record();
     }
 }

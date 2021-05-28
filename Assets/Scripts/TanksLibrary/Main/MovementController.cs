@@ -28,6 +28,7 @@ namespace TanksLibrary.Main
             if (index == _sequences.Count)
             {
                 _currentSequence?.Rewind();
+                _currentSequence.Kill();
                 _currentSequence = DOTween.Sequence();
                 foreach (var tween in _tweens)
                 {
@@ -68,7 +69,6 @@ namespace TanksLibrary.Main
                 t.SetOptions(false).SetTarget<Tweener>((object) target);
                 return t;
             }
-
         }
         
         
