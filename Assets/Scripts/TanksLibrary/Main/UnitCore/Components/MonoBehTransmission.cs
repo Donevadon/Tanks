@@ -15,6 +15,7 @@ namespace TanksLibrary.Main.UnitCore.Components
         {
             var transform1 = transform;
             var position = transform1.position;
+            var rotation = transform1.rotation.eulerAngles;
             _transmission = new TurretСrawlerTransmission(
                 new UnitControllerAdapter(
                     new MovementController(
@@ -23,6 +24,10 @@ namespace TanksLibrary.Main.UnitCore.Components
                             {
                                 X = position.x,
                                 Y = position.y
+                            },new Vector2()
+                            {
+                                X = rotation.x,
+                                Y = rotation.y
                             })));
         }
 
@@ -45,7 +50,11 @@ namespace TanksLibrary.Main.UnitCore.Components
         
         public void RotateTo(UnityEngine.Vector2 rotatePoint)
         {
-            //_transmission.RotateTo(rotatePoint);
+            _transmission.RotateTo(new Transmission.Vector2()
+            {
+                X = rotatePoint.x,
+                Y = rotatePoint.y
+            });
         }
 
         

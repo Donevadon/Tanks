@@ -6,6 +6,6 @@ namespace SequentialMovement
         void Rewind();
         void AddMove(Vector2 movePoint);
         void AddRotate(Vector2 movePoint);
-        Vector2 RecordAndGetLastPosition();
+        Vector2 RecordAndGetLastPosition(out Vector2 lastRotation);
     }
 }

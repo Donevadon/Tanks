@@ -13,9 +13,9 @@ namespace TanksLibrary.Main.DoTweenController
             _transform = transform;
         }
         
-        public ISequence Create(Vector2 startPosition)
+        public ISequence Create(Vector2 startPosition, Vector2 startRotation)
         {
-            return new SequenceWrapper(startPosition, _transform);
+            return new SequenceWrapper(startPosition,Quaternion.Euler(new Vector3(startRotation.X,startRotation.Y)), _transform);
         }
     }
 }
